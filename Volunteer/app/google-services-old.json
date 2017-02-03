@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:620563949857:android:b9f68efc0b0e5569",
+        "mobilesdk_app_id": "1:620563949857:android:87d318dc4f4bbd00",
         "android_client_info": {
-          "package_name": "com.wehelpyou.com.wehelpyou.wehelpvolunteers"
+          "package_name": "com.swamphacks.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "620563949857-rrgikbk378mb1nfsi1b4ps1jgkgk5sbp.apps.googleusercontent.com",
+          "client_id": "620563949857-mqdqpa98145udjrd9sh7ngrgj3ffstv5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.wehelpyou.com.wehelpyou.wehelpvolunteers",
+            "package_name": "com.swamphacks.myapplication",
             "certificate_hash": "2AC221D1B93765984080BED45E874DC69C4FE797"
           }
         },
@@ -52,17 +52,17 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:620563949857:android:9114f63d4ac65a03",
+        "mobilesdk_app_id": "1:620563949857:android:b9f68efc0b0e5569",
         "android_client_info": {
-          "package_name": "com.wehelpyou.wehelpvolunteers"
+          "package_name": "com.wehelpyou.com.wehelpyou.wehelpvolunteers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "620563949857-53av1i4nk16tf9u4i9fbcmffon91uuv4.apps.googleusercontent.com",
+          "client_id": "620563949857-rrgikbk378mb1nfsi1b4ps1jgkgk5sbp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.wehelpyou.wehelpvolunteers",
+            "package_name": "com.wehelpyou.com.wehelpyou.wehelpvolunteers",
             "certificate_hash": "2AC221D1B93765984080BED45E874DC69C4FE797"
           }
         },

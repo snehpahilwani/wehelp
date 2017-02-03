@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ede607"
+    android:background="@drawable/material"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -22,6 +22,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
         android:hint="Name"
         android:inputType="textPersonName" />
 
@@ -30,6 +32,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimaryDark"
         android:hint="Phone"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
         android:inputType="phone" />
 
 
@@ -40,6 +44,8 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:hint="E-Mail ID"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
         android:id="@+id/EditTextEmail"
         android:inputType="textEmailAddress" />
 
@@ -51,6 +57,8 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:hint="Emergency Contact"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
         android:inputType="phone" />
 
 
@@ -62,6 +70,8 @@
         android:backgroundTint="@color/colorPrimaryDark"
         android:gravity="top"
         android:hint="Address"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
         android:fitsSystemWindows="true"
         android:breakStrategy="balanced"
         android:padding="5dp" />
@@ -73,6 +83,8 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
         android:hint="Government ID"
         android:inputType="number" />
 

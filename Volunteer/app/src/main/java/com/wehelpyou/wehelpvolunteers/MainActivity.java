@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.loopj.android.http.AsyncHttpClient;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFirebaseToken();
+        //getFirebaseToken();
         setContentView(R.layout.activity_main);
 
         MapsFragment maps = new MapsFragment();
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
     public void getFirebaseToken(){
+        FirebaseApp.initializeApp(this);
         FirebaseMessaging.getInstance();//.subscribeToTopic("news");
         String token = FirebaseInstanceId.getInstance().getToken();
 //        MyFirebaseMessagingService myFirebaseMessagingService = new MyFirebaseMessagingService();

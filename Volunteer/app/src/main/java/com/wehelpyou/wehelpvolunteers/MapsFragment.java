@@ -17,6 +17,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -24,7 +27,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class MapsFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
-    private GoogleMap mMap;
+    //private GoogleMap mMap;
     private SupportMapFragment smf;
 
 
@@ -38,7 +41,9 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback, Google
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        //FirebaseApp.initializeApp(Context);
+        FirebaseMessaging.getInstance();//.subscribeToTopic("news");
+        String token = FirebaseInstanceId.getInstance().getToken();
         FragmentManager fm = getChildFragmentManager();
         smf = (SupportMapFragment)fm.findFragmentById(R.id.map);
         if(smf==null){
@@ -53,8 +58,16 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback, Google
 
 
 
-                    googleMap.addMarker(new MarkerOptions().position(new LatLng(29.702182, -98.83438)).title("marker"));
-                    googleMap.addMarker(new MarkerOptions().position(new LatLng(-34.56564, 151.34545)).title("sydney"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(29.702182, -98.83438)).title("Texas"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(-34.56564, 151.34545)).title("Sydney"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(29.56564, -82.34545)).title("Gainesville"));
+                    googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(29.56564, -82.34545), 6.0f));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(29.8172, -82.1401)).title("Ocala"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(25.7617, -80.1917)).title("Miami"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(28.5383, -81.3792)).title("Orlando"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(33.56564, -84.38845)).title("Atlanta"));
+                    googleMap.addMarker(new MarkerOptions().position(new LatLng(30.56564, -81.34545)).title("Jacksonville"));
+
                     googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
                     googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {

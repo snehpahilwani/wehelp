@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/material"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.wehelpyou.wehelp.MainActivity"
     tools:showIn="@layout/app_bar_main">
@@ -22,21 +23,9 @@
     android:layout_height="wrap_content"
     android:layout_width="fill_parent"
     android:scrollbars="vertical"
+    android:textColorHint="@android:color/background_light"
+    android:textColor="@android:color/background_light"
     android:hint="Reason"
     />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimaryDark"
-        android:elevation="4dp"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
-        android:text="Submit"
-        android:id="@+id/btn_submit"
-        android:textColor="#fff"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-         />
 </RelativeLayout>
